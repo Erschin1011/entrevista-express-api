@@ -26,6 +26,13 @@ Starter de API REST con **Node.js**, **Express 5**, validación **Zod**, el modo
 
 Instala **Node.js LTS** desde [nodejs.org](https://nodejs.org/) (el instalador incluye npm). Deja activada la opción para agregar Node al PATH. Cierra y vuelve a abrir PowerShell.
 
+También puedes instalarlo con winget:
+
+```powershell
+winget search --id OpenJS.NodeJS.LTS
+winget install --id OpenJS.NodeJS.LTS -e
+```
+
 Verifica:
 
 ```powershell
@@ -35,6 +42,17 @@ where.exe node
 ```
 
 Se recomienda Node 20 o superior. Si `node` no se reconoce, repara PATH o vuelve a ejecutar el instalador y abre una terminal nueva.
+
+Si empezaras una API Express vacía, crea carpeta/proyecto, inicializa npm e instala Express y Zod así:
+
+```powershell
+mkdir mi-api
+cd mi-api
+npm init -y
+npm install express zod
+```
+
+Para recarga en desarrollo este starter usa `node --watch`, integrado en Node 20+; no hace falta instalar Nodemon.
 
 Instala Git for Windows desde [git-scm.com/download/win](https://git-scm.com/download/win) para clonar. VS Code es opcional.
 
